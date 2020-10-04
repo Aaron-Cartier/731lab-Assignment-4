@@ -38,6 +38,15 @@ public class recipeAdapter extends RecyclerView.Adapter<recipeViewHolder>{
         holder.rDescription.setText(myRecipeList.get(i).getDescription());
         holder.rRecipe.setText(myRecipeList.get(i).getRecipeSteps());
 
+        holder.rCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(rContext, RecipeSteps.class);
+                intent.putExtra("Image", myRecipeList.get(holder.getAdapterPosition()).getItemImg());
+                intent.putExtra("Recipe", myRecipeList.get(holder.getAdapterPosition()).getRecipeSteps());
+                rContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -45,6 +54,7 @@ public class recipeAdapter extends RecyclerView.Adapter<recipeViewHolder>{
         return myRecipeList.size();
     }
 }
+
 class recipeViewHolder extends RecyclerView.ViewHolder{
 
     ImageView imageView;
