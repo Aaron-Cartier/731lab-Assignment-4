@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         myRecipeList.add(rFoodData);
         rFoodData = new FoodData("Broiled Tilapia Parmesan","Flavourful recipe for this farm raised fish that is easy and done in minutes! The fish is broiled with a creamy cheese coating for an impressive flavour and finished with Parmesana on top."," Ingredients:\n" +
                 " - 4 Tilapia fillets (defrosted if frozen)\n" + " - 1/4 cup parmesan cheese grated\n" + " - 2 tablespoons butter\n" + " - 1 1/2 tablespoons mayonnaise or dressing\n" + " - 1 tablespoons lemon juice fresh\n" +
-                " - 1 teaspoon dill fresh\n" + " - seasoning salt and pepper\n" + " Instructions:\n" +
+                " - 1 teaspoon dill fresh\n" + " - seasoning salt and pepper\n\n" + " Instructions:\n" +
                 "1. Turn broiler onto high and adjust oven rack to the top.\n\n" +
                 "2. In a small bowl, combine all ingredients except the Tilapia. Set aside.\n\n" +
                 "3. Place Tilapia fillets on a foil lined pan. Broil for 3 minutes.\n\n" +
